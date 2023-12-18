@@ -27,7 +27,7 @@ Before running the Jupyter Notebook, ensure you have the following:
 
 - MSSQL Server installed and configured.
 - Azure Blob Storage account credentials.
-- Python environment with necessary libraries installed (e.g., pandas, pymssql).
+- Python environment with necessary libraries installed (check requirements.txt).
 
 ## Project Structure
 

@@ -52,9 +52,8 @@ ETL-Project/
 ```bash
 git clone https://github.com/DamilolaAdeniji/GITHUB-MSSQL-ETL-PROJECT.git
 cd ETL-Project
-```
+
 
 ## Install the required Python libraries:
 ``` python
 pip install -r requirements.txt
-```

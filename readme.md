@@ -45,3 +45,16 @@ ETL-Project/
 |   |-- sql_connector.py
 |-- README.md
 |-- requirements.txt
+```
+
+# Usage
+## Clone the repository:
+```bash
+git clone https://github.com/DamilolaAdeniji/GITHUB-MSSQL-ETL-PROJECT.git
+cd ETL-Project
+```
+
+## Install the required Python libraries:
+``` python
+pip install -r requirements.txt
+```

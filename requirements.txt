@@ -6,4 +6,4 @@ numpy==1.21.6
 requests==2.26.0
 DateTime==5.0
 pymssql==2.2.5
-azure-storage-blob==2.1.0
+azure-storage-blob==12.19.0

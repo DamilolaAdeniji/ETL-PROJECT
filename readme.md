@@ -1,8 +1,8 @@
-# ETL Project: GitHub Data Extraction and Loading to MSSQL
+# ETL Project: GitHub Data Extraction and Loading to Azure Synapse Analytics Dedicated SQL Pool
 
 ## Overview
 
-This ETL (Extract, Transform, Load) project is implemented in a Jupyter Notebook (`ETL.ipynb`). It extracts data from a GitHub repository in CSV and JSON formats, applies necessary transformations based on business logic, stores the transformed data into an Azure Blob Storage file (CSV format), and then uses a 'COPY INTO' SQL statement to load the file into a stage table. Finally, a stored procedure is executed to load the data from the stage table to a table in a schema accessible to end users. The database used for this project is Microsoft SQL Server (MSSQL).
+This ETL (Extract, Transform, Load) project is implemented in a Jupyter Notebook (`ETL.ipynb`). It extracts data from a GitHub repository in CSV and JSON formats, applies necessary transformations based on business logic, stores the transformed data into an Azure Blob Storage file (CSV format), and then uses a 'COPY INTO' SQL statement to load the file into a stage table. Finally, a stored procedure is executed to load the data from the stage table to a table in a schema accessible to end users. The database used for this project is Azure Synapse Analytics Dedicated SQL Pool
 
 ## Workflow
 
@@ -16,16 +16,16 @@ This ETL (Extract, Transform, Load) project is implemented in a Jupyter Notebook
     - The transformed data is stored in an Azure Blob Storage file in CSV format.
 
 4. **SQL Loading:**
-    - The 'COPY INTO' SQL statement is used to load the CSV file into a stage table in MSSQL.
+    - The 'COPY INTO' SQL statement is used to load the CSV file into a stage table in ASA Dedicated SQL Pool.
 
 5. **Stored Procedure Execution:**
-    - A stored procedure is executed to load the data from the stage table to a table in a schema accessible to end users.
+    - stored procedures were executed to load the data to & from the stage table to a table in a schema accessible to end users.
 
 ## Prerequisites
 
 Before running the Jupyter Notebook, ensure you have the following:
 
-- MSSQL Server installed and configured.
+- An Azure Synapse Analytics Workspace with contributor access and write priviledges.
 - Azure Blob Storage account credentials.
 - Python environment with necessary libraries installed (check requirements.txt).
 

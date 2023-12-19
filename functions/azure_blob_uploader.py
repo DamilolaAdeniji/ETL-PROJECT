@@ -25,7 +25,7 @@ def save_dataframe_to_blob(df, blob_name):
 
         # Upload data to Blob Storage
         blob_client = container_client.get_blob_client(blob_name)
-        blob_client.upload_blob(csv_data, content_settings=ContentSettings(content_type='application/csv'))
+        blob_client.upload_blob(csv_data, content_settings=ContentSettings(content_type='application/csv'),overwrite=True)
 
         print(f"DataFrame successfully saved to Azure Blob Storage. Container: {container_name}, Blob: {blob_name}")
 

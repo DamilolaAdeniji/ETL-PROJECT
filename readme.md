@@ -50,7 +50,7 @@ ETL-Project/
 # Usage
 ## Clone the repository:
 ```bash
-    git clone https://github.com/DamilolaAdeniji/GITHUB-MSSQL-ETL-PROJECT.git
+    git clone https://github.com/DamilolaAdeniji/GITHUB-SYNAPSE-ETL-PROJECT.git
     cd ETL-Project
 ```
 

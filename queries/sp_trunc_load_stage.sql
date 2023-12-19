@@ -7,7 +7,22 @@ AS BEGIN
     BEGIN TRY
     
         BEGIN TRANSACTION
-        TRUNCATE TABLE stage.customers
+        DROP TABLE stage.customers
+
+        CREATE TABLE stage.customers (
+        id varchar(25),
+        first_name varchar(255),
+        last_name varchar(255),
+        email varchar(255),
+        gender varchar(25),
+        phone varchar(255),
+        dateloaded datetime)
+        WITH 
+        (
+            HEAP,  
+            DISTRIBUTION = ROUND_ROBIN  
+        )
+        
         COPY INTO stage.customers
         FROM @file_url
         WITH (FILE_TYPE = 'CSV',

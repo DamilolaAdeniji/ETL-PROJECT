@@ -25,7 +25,7 @@ This ETL (Extract, Transform, Load) project is implemented in a Jupyter Notebook
 
 Before running the Jupyter Notebook, ensure you have the following:
 
-- An Azure Synapse Analytics Workspace with contributor access and write priviledges.
+- An Azure Synapse Analytics Workspace with contributor access and db_write priviledges.
 - Azure Blob Storage account credentials.
 - Python environment with necessary libraries installed (check requirements.txt).
 
